@@ -1,8 +1,10 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';
 import useComment from '../Hooks/Hooks';
 
 const Home = () => {
-    const [comment,setComment]=useComment()
+    const [comments,setComment]=useComment();
+    const navigete=useNavigate()
     return (
         <div className="">
  <div  className=" grid grid-cols-2 items-center justify-items-end px-10 py-10">
@@ -19,7 +21,13 @@ const Home = () => {
         </div>
             <div className="">
             <h1 className='text-5xl font-bold text-amber-300'>Customer Review</h1>
-                <h1>{comment.length}</h1>
+                {
+                    comments.slice(0,3).map(comment => <div>
+                       <h1>{comment.name}</h1>
+                     
+                    </div>)
+                }
+                  <button onClick={() =>navigete(`/review`)} className="bg-amber-300">see all review</button>
             </div>
         </div>
        

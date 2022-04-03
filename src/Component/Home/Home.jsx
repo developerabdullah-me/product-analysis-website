@@ -1,6 +1,8 @@
 import React from 'react';
+import useComment from '../Hooks/Hooks';
 
 const Home = () => {
+    const [comment,setComment]=useComment()
     return (
         <div className="">
  <div  className=" grid grid-cols-2 items-center justify-items-end px-10 py-10">
@@ -16,7 +18,8 @@ const Home = () => {
             </div>
         </div>
             <div className="">
-            <h1 className='text-5xl'>Customer Review</h1>
+            <h1 className='text-5xl font-bold text-amber-300'>Customer Review</h1>
+                <h1>{comment.length}</h1>
             </div>
         </div>
        

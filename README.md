@@ -1,5 +1,6 @@
 
 # Special Notes
+# live link: https://laptopreviewnow.netlify.app/
 # React rating demo: https://dreyescat.github.io/react-rating/
 
 ##### npm install recharts --force

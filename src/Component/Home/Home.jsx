@@ -8,7 +8,7 @@ const Home = () => {
     const navigete=useNavigate()
     return (
         <div className="">
- <div  className=" grid grid-cols-2 items-center justify-items-end px-10 py-10">
+ <div  className=" grid md:grid-cols-2 items-center justify-items-end px-10 py-10  sm:grid-cols-1">
             <div className="">
                 <h1 className="text-5xl font-bold">
                <span className="text-amber-300">Teclast F7S </span>

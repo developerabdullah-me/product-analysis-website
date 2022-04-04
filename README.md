@@ -6,10 +6,11 @@
 
 ##### npm install --save react-rating
 
+##### npm install react-icons --save
 <code>
-import Rating from 'react-rating';
-import { AiFillStar } from 'react-icons/ai';
-import {BsStarHalf } from 'react-icons/bs';
+        import Rating from 'react-rating';
+        import { AiFillStar } from 'react-icons/ai';
+        import {BsStarHalf } from 'react-icons/bs';
 
      <Rating
     initialRating={3.5}

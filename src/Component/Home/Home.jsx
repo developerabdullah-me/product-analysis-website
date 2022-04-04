@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import useComment from '../Hooks/Hooks';
+import SingleReviewHome from '../SingleReviewHome/SingleReviewHome';
 
 const Home = () => {
     const [comments,setComment]=useComment();
@@ -22,11 +23,7 @@ const Home = () => {
             <div className="">
             <h1 className='text-5xl font-bold text-amber-300'>Customer Review</h1>
                 {
-                    comments.slice(0,3).map(comment => <div>
-                        <img src={comment.picture} alt=""/>
-                       <h1>{comment.name}</h1>
-                     
-                    </div>)
+                    comments.slice(0,3).map(comment => <SingleReviewHome comment={comment}></SingleReviewHome>)
                 }
                   <button onClick={() =>navigete(`/review`)} className="bg-amber-300">see all review</button>
             </div>

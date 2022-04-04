@@ -2,8 +2,8 @@ import React from 'react';
 
 const Blogs = () => {
     return (
-        <div>
-            <div className="w-60">
+        <div className="grid md:grid-cols-2 sm:grid-cols-1 gap-4">
+            <div className="shadow-lg">
            <h1 className="text-3xl text-amber-300">what is semantics tag</h1> 
            <p>
            এইচটিএমএল মূলত এটি একটি মার্কআপ ল্যাংগুয়েজ, 
@@ -23,10 +23,11 @@ main
 mark
 nav
 section
+
       </p>
       </div>
-      <div className="">
-          <h1>what is context api</h1>
+      <div className="shadow-lg">
+          <h1 className="text-3xl text-amber-300">what is context api</h1>
           <p>আপনি যদি প্রপস (প্যারেন্ট থেকে চাইল্ড) ব্যবহার করে অনেকগুলি উপাদানে ডেটা ভাগ করেন, আপনি প্রপস পদ্ধতি  ব্যবহার করেন, প্রথমে প্যারেন্ট এর কাছ থেকে একটি চাইল্ড কাছে ডেটা ভাগ করুন তারপর অন্য, কন্টেক্সট API আমাদের জন্য এটিকে সহজ করে দিয়েছে, আপনি দুটি উপাদানের মধ্যে যেকোনো ডেটা ভাগ করতে পারেন প্রতিটি স্তরের প্রপস ব্যবহার না করেই। আপনি কন্টেক্সট API ব্যবহার করে সরাসরি প্যারেন্ট উপাদান থেকে যেকোনো চাইল্ড উপাদানে ডেটা ভাগ করতে পারেন।</p>
       </div>
         </div>

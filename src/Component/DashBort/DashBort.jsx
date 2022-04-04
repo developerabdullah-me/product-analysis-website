@@ -58,8 +58,8 @@ const DashBort = () => {
                     </RadarChart>
 <div className="">
 <RadialBarChart
-                width={600}
-                height={600}
+                width={700}
+                height={700}
                 innerRadius="10%"
                 outerRadius="80%"
                 data={data}

@@ -14,10 +14,10 @@ const SingleReviewHome = (props) => {
             </div>
             <p>{review}</p>
             <Rating
-    initialRating={3.5}
-    emptySymbol={<BsStarHalf style={{color: 'goldenrod'}}/>}
-    fullSymbol={<AiFillStar style={{color: 'goldenrod'}}/>}
-    readonly
+        initialRating={4.5}
+        emptySymbol={<BsStarHalf style={{color: 'goldenrod'}}/>}
+        fullSymbol={<AiFillStar style={{color: 'goldenrod'}}/>}
+        readonly
 ></Rating>
             </div>
         </div>

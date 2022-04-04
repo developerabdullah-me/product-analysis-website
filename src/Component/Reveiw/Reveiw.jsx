@@ -1,9 +1,14 @@
 import React from 'react';
+import useComment from '../Hooks/Hooks';
+import SingelReview from '../SingelReview/SingelReview';
 
 const Reveiw = () => {
+    const [comments,setComment]=useComment();
     return (
         <div>
-            <h1>revew</h1>
+          {
+              comments.map(comment => <SingelReview comment={comment}></SingelReview>)
+          }
            
         </div>
     );

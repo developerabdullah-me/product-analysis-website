@@ -23,6 +23,7 @@ const Home = () => {
             <h1 className='text-5xl font-bold text-amber-300'>Customer Review</h1>
                 {
                     comments.slice(0,3).map(comment => <div>
+                        <img src={comment.picture} alt=""/>
                        <h1>{comment.name}</h1>
                      
                     </div>)

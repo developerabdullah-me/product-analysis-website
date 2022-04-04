@@ -1,5 +1,5 @@
 import React from 'react';
-import { Bar, BarChart, CartesianGrid, Legend, Tooltip, XAxis, YAxis } from 'recharts';
+import { Bar, BarChart, CartesianGrid, Legend, RadialBar, RadialBarChart, Tooltip, XAxis, YAxis } from 'recharts';
 
 const DashBort = () => {
     const data = [
@@ -52,7 +52,31 @@ const DashBort = () => {
   <Bar dataKey="sell" fill="#8884d8" />
   <Bar dataKey="revenue" fill="#82ca9d" />
 </BarChart>
-        </div>
+<div className="">
+<RadialBarChart
+                width={1300}
+                height={1300}
+                innerRadius="10%"
+                outerRadius="80%"
+                data={data}
+                startAngle={180}
+                endAngle={0}
+
+                className="mx-auto"
+            >
+
+                <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='month' />
+
+                <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='investment' />
+
+                <RadialBar minAngle={15} label={{ fill: '#666', position: 'insideStart' }} background clockWise={true} dataKey='revenue' />
+
+                <Tooltip />
+
+            </RadialBarChart>
+</div>
+  </div>
+
     );
 };
 
